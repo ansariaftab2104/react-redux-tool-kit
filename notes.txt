@@ -1,6 +1,6 @@
-1. npm install @reduxjs/toolkit react-redux
+1) npm install @reduxjs/toolkit react-redux
 
-2. Create store using configureStore. configureStore accepts reducer :- folder - app -> file - Store.jsx 
+2) Create store using configureStore. configureStore accepts reducer :- folder - app -> file - Store.jsx 
 app/Store.jsx :- code -
 import { configureStore } from '@reduxjs/toolkit'
 
@@ -9,7 +9,11 @@ export const store = configureStore({
 })
 /* Kitchen setuped */
 
-*. Folder names for saving reducers :- features, state, reducers, slices
+3) Folder names for saving reducers :- features, state, reducers, slices
 Currently we are using Folder name - features. Now we have to create reducers.
 reducers means -> state + action
 reducer has state & there action to update the state
+
+3.1 ) Folder -> counterSlice.jsx :-
+Here we are creating Slice. Slice means State. Ishi ke ander actual data rehne wala hain.
+
